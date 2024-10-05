@@ -30,12 +30,12 @@ export default function Authenticated({ header, children }) {
                             >
                                 Dashboard
                             </NavLink>
-                            <NavLink
-                                href={route("create")}
+                            <Link
+                                href="/events/create"
                                 active={route().current("create")}
                             >
                                 Create
-                            </NavLink>
+                            </Link>
                         </div>
 
                         <div className="hidden sm:ms-6 sm:flex sm:items-center">
